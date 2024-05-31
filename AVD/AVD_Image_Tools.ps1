@@ -29,7 +29,7 @@ Invoke-WebRequest -Uri $teamsURL -OutFile $outputPath -ErrorAction Stop
 
 # Install Teams quietly using Add-AppxPackage
 Add-AppxPackage -Path $outputPath
-#test
+#test1
 #Enable hardware encode for Teams on Azure Virtual Desktop
 $registryPath = "HKCU:\SOFTWARE\Microsoft\Terminal Server Client\Default\AddIns\WebRTC Redirector"
 New-Item -Path $registryPath -Force | Out-Null
